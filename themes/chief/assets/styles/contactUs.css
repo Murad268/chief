@@ -1,0 +1,148 @@
+.contactUs {
+   padding-bottom: 160px;
+}
+.contactUs .custom__title {
+   text-align: center;
+}
+.contactUs__wrapper {
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contactUs__contacts {
+   width: 363px;
+   padding-left: 128px;
+}
+.contactUs__map {
+   width: max-content;
+
+  
+}
+
+.contactUs__map__img {
+   width: 680px;
+   height: 374px;
+   object-fit: fill;
+}
+
+.contactUs__contact {
+   display: flex;
+   align-items: center;
+   column-gap: 33px;
+}
+.contactUs__contact>span, .contactUs__contact>a {
+   font-family: 'Sofia Pro';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   color: var(--black--green);
+   letter-spacing: -0.015em;
+}
+.contactUs .location {
+   margin-bottom: 44px;
+}
+.contactUs .tel {
+   margin-bottom: 58px;
+}
+.contactUs .email {
+   margin-bottom: 43px;
+}
+
+@media(max-width: 1200px) {
+   .contactUs__wrapper {
+      column-gap: 20px
+   }
+   .contactUs__contacts {
+      
+      width: max-content;
+      margin: 0;
+      padding: 0 !important;
+   }
+}
+@media(max-width: 992px) {
+   .contactUs {
+      padding-bottom: 0;
+   }
+   .contactUs__map {
+      margin-bottom: -25px !important;
+   }
+   .custom__title {
+      font-size: 60px;
+      margin-left: 20px;
+   }
+   .contactUs__wrapper {
+      flex-direction: column;
+      row-gap: 60px;
+      align-items: stretch;
+      padding: 0;
+   }
+ 
+   .contactUs__map {
+      width: 100%;
+   }
+   .contactUs__map__img {
+      width: 100%;
+   }
+   .contactUs .contactUs__contacts {
+      padding: 20px 20px !important;
+   }
+}
+@media(max-width: 776px) {
+   .contact {
+      padding-bottom: 0;
+   }
+
+   .contactUs__map {
+     
+
+      overflow-x: scroll;
+      height: max-content;
+   }
+   .contactUs__map__main::-webkit-scrollbar {
+      display: none;
+   }
+   .contactUs__map__img {
+      min-width: 100%;
+      min-width: 680px !important;
+      height: 374px;
+      scrollbar-width: none; 
+      -ms-overflow-style: none;
+    
+   }
+}
+@media(max-width: 468px) {
+   .contactUs .container {
+      width: 100%;
+      padding: 0 !important;
+   }
+ 
+   .contactUs__map::-webkit-scrollbar {
+      display: none;
+  }
+ 
+   .contactUs__contacts {
+      width: 100%;
+      padding: 0;
+      padding-left: 23px !important;
+   }
+   .custom__title {
+      font-size: 44px;
+      line-height: 50px;
+      text-align: left;
+      margin: 0;
+      display: inline;
+      margin-left: 23px;
+   }
+
+
+   .contactUs__map__img {
+ 
+      height: 100%;
+      object-fit: fill;
+   }
+   .contactUs {
+      padding-bottom: 0;
+   }
+}
