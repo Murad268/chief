@@ -1,0 +1,11 @@
+plugin:
+    name: 'murad.settings::lang.plugin.name'
+    description: 'murad.settings::lang.plugin.description'
+    author: Murad
+    icon: oc-icon-coffee
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Settings
+        url: murad/settings/settings
+        icon: icon-coffee

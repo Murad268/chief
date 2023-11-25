@@ -40,133 +40,15 @@ description = "default"
         {% endif %}
     </style>
 
-
     <body>
         <div class="up">
             <img src="{{'assets/icons/footer/up.png' | theme }}" alt="" />
         </div>
-
-        <header class="header">
-            <div class="menu">
-                <i class="fa fa-window-close" aria-hidden="true"></i>
-                <ul>
-                    <li><a href="./aboutUs.html">About us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./products.html">Products</a></li>
-                    <li><a href="./ourteams.html">Our team</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="header__top">
-                    <div class="header__top__wrapper">
-                        <div class="header__top__tel">
-                            <span>
-                                <img
-                                    src="{{'assets/icons/navbar/carbon_phone-filled.png' | theme }}"
-                                    alt=""
-                                />
-                            </span>
-                            <span><a href="">+994 50 000 00 00</a></span>
-                        </div>
-                        <div class="header__top__logo">
-                            <a href="./index.html">LOGO</a>
-                        </div>
-                        <div class="header__top__lang">
-                            <span>
-                                <img
-                                    src="{{'assets/icons/navbar/icon-park-outline_earth.png' | theme }}"
-                                    alt=""
-                                />
-                            </span>
-                            <span>EN</span>
-                        </div>
-                        <div class="header__hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar">
-                    <div class="navbar__wrapper">
-                        <ul>
-                            <li><a href="./aboutUs.html">About us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./products.html">Products</a></li>
-                            <li><a href="./ourteams.html">Our team</a></li>
-                            <li><a href="./contact.html">Contact us</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                {% if this.page.title == 'home page' %}
-
-                <div class="header__body">
-                    <div class="header__body__wrapper">
-                        <h1 class="header__body__title">
-                            Awaken Your <br />
-                            <span>Inner Chef</span>
-                        </h1>
-                        <div class="header__body__footer">
-                            <a
-                                href=""
-                                class="header__body__footer__more custom__button"
-                                >Learn more</a
-                            >
-                            <a
-                                href=""
-                                class="header__body__footer__videolink custom__links"
-                                >Watch the video</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header__img">
-                <img
-                    src="{{ 'assets/images/header/Group 1 (2).png' | theme }}"
-                    alt=""
-                />
-            </div>
-            {% endif %}
-        </header>
+        {% partial 'header' %}
         {% page %}
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__logo"><a href="./index.html">LOGO</a></div>
-                <div class="footer__wrapper">
-                    <div class="footer__socials">
-                        <div class="footer__social">
-                            <img
-                                src="{{'assets/icons/footer/facebook.png' | theme }}"
-                                alt=""
-                            />
-                        </div>
-                        <div class="footer__social">
-                            <img
-                                src="{{'assets/icons/footer/instagram.png' | theme }}"
-                                alt=""
-                            />
-                        </div>
-                        <div class="footer__social">
-                            <img
-                                src="{{'assets/icons/footer/twitter.png' | theme }}"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                    <div class="footer__mini">
-                        <a href="">Privacy Policy</a>
-                        <a href="">Legal terms </a>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="footer__copirate">
-                ©2022 All Right Reserved. Developed by Webcoder
-            </div>
-        </footer>
+
+        {% partial 'footer' %}
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script

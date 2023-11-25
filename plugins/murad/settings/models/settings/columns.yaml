@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: id
+        type: number
+    phone:
+        label: phone
+        type: text
+    logo:
+        label: logo
+        type: text
+    copywrite:
+        label: copywrite
+        type: text
+    facebook:
+        label: facebook
+        type: text
+    instagram:
+        label: instagram
+        type: text
+    twitter:
+        label: twitter
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
