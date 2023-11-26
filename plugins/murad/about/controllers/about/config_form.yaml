@@ -1,0 +1,10 @@
+name: About
+form: $/murad/about/models/about/fields.yaml
+modelClass: Murad\About\Models\About
+defaultRedirect: murad/about/about
+create:
+    redirect: 'murad/about/about/update/:id'
+    redirectClose: murad/about/about
+update:
+    redirect: murad/about/about
+    redirectClose: murad/about/about

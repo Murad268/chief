@@ -2,24 +2,40 @@ url = "/"
 layout = "default"
 title = "home page"
 
-[contenteditor]
+[builderList]
+modelClass = "Murad\About\Models\About"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = 1
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList builderList2]
+modelClass = "Murad\Homeservice\Models\HomeService"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = 1
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 <section class="aboutUs">
       <div class="container">
          <div class="aboutUs__wrapper">
+
             <div class="aboutUs__left">
-               <h2 class="aboutUs__title custom__title">
-                  About us
-               </h2>
-               <div class="custom__text aboutUs__desc">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                  sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                  <br><br>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                  non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-               </div>
+           {% for record in builderList.records %}
+                <h2 class="aboutUs__title custom__title">
+                    {{ record.title }}
+                </h2>
+                <div class="custom__text aboutUs__desc">
+                    {{ record.desc|striptags|raw }}
+                </div>
+            {% endfor %}
+
                <div class="aboutUs__footer">
                   <a href="" class="custom__button aboutUs__footer__more">Learn more</a>
                   <a href="" class="custom__links aboutUs__footer__videoLink">Watch the video</a>
@@ -33,19 +49,26 @@ title = "home page"
    </section>
    <section class="services">
       <div class="container">
-         <div class="services__top">
-            <div class="custom__title services__title">
-               Services
+              <div class="aboutUs__wrapper">
+                <div class="services__top">
+                  {% for record in builderList2.records %}
+                     <div class="custom__title services__title">
+                        {{ record.title }}
+                    </div>
+                    <div class="custom__text services__desc">
+                       {{ record.desc|striptags|raw }}
+                    </div>
+
+                {% endfor %}
+
+                <div class="services__button">
+                    <a class="custom__button" href="">Learn more</a>
+                </div>
             </div>
-            <div class="custom__text services__desc">
-               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-               rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-               explicabo.
+             <div class="aboutUs__right">
+                <img src="{{'assets/images/aboutus/aboutus.png' | theme}}" alt="">
             </div>
-            <div class="services__button">
-               <a class="custom__button" href="">Learn more</a>
-            </div>
-         </div>
+              </div>
          <div class="services__slider">
 
             <div class="slide__wrapper">

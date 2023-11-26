@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: 'About title'
+        span: auto
+        type: text
+    desc:
+        label: 'About description'
+        size: ''
+        span: auto
+        type: richeditor

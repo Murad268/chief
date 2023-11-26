@@ -7,12 +7,16 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+[sitePicker]
+
 ==
 
 <header class="header">
+
     <div class="menu">
         <i class="fa fa-window-close" aria-hidden="true"></i>
         <ul>
+
             <li><a href="./aboutUs.html">About us</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./products.html">Products</a></li>
@@ -21,6 +25,7 @@ pageNumber = "{{ :page }}"
         </ul>
     </div>
     <div class="container">
+
         <div class="header__top">
             <div class="header__top__wrapper">
                 <div class="header__top__tel">
@@ -46,7 +51,11 @@ pageNumber = "{{ :page }}"
                             alt=""
                         />
                     </span>
-                    <span>EN</span>
+                    <div style="display: flex; column-gap: 5px">
+                        {% for site in sitePicker.sites %}
+                            <a style=" padding: 3px;background-color: white;color: black; font-weight: bold;" href="{{ site.url }}">{{ site.name }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div class="header__hamburger">
                     <span></span>
@@ -71,8 +80,9 @@ pageNumber = "{{ :page }}"
         <div class="header__body">
             <div class="header__body__wrapper">
 
-                {% component 'contenteditor' file="header_body/header_body.htm" fixture="h1" class="header__body__title"
-                %}
+                <h1 class="header__body__title">
+                Awaken Your<br>Inner Chef
+                </h1>
                 <div class="header__body__footer">
                     <a href="" class="header__body__footer__more custom__button"
                         >Learn more</a

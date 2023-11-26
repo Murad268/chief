@@ -1,0 +1,10 @@
+name: HomeServices
+form: $/murad/homeservice/models/homeservice/fields.yaml
+modelClass: Murad\Homeservice\Models\HomeService
+defaultRedirect: murad/homeservice/homeservices
+create:
+    redirect: 'murad/homeservice/homeservices/update/:id'
+    redirectClose: murad/homeservice/homeservices
+update:
+    redirect: murad/homeservice/homeservices
+    redirectClose: murad/homeservice/homeservices

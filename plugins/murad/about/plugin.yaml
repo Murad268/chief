@@ -1,0 +1,11 @@
+plugin:
+    name: 'murad.about::lang.plugin.name'
+    description: 'murad.about::lang.plugin.description'
+    author: Murad
+    icon: oc-icon-compass
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: About
+        url: murad/about/about
+        icon: icon-life-ring

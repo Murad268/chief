@@ -1,0 +1,13 @@
+fields:
+    title:
+        label: 'Home services title'
+        span: auto
+        type: text
+tabs:
+    fields:
+        desc:
+            label: 'Home services description'
+            size: ''
+            span: auto
+            type: richeditor
+            tab: 'Tab 1'

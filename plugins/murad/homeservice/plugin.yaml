@@ -1,0 +1,11 @@
+plugin:
+    name: 'murad.homeservice::lang.plugin.name'
+    description: 'murad.homeservice::lang.plugin.description'
+    author: Murad
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: HomeServices
+        url: murad/homeservice/homeservices
+        icon: icon-life-ring
