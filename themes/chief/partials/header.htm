@@ -1,3 +1,14 @@
+[builderList]
+modelClass = "Murad\Settings\Models\Settings"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = 1
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+
 <header class="header">
     <div class="menu">
         <i class="fa fa-window-close" aria-hidden="true"></i>
@@ -19,10 +30,14 @@
                             alt=""
                         />
                     </span>
-                    <span><a href="">+994 50 000 00 00</a></span>
+                     {% for record in builderList.records %}
+                    <span><a href=""> {{ record.phone }}</a></span>
+                    {% endfor %}
                 </div>
                 <div class="header__top__logo">
-                    <a href="./index.html">LOGO</a>
+                    {% for record in builderList.records %}
+                    <a href="./index.html">{{record.logo}}</a>
+                    {% endfor %}
                 </div>
                 <div class="header__top__lang">
                     <span>
@@ -55,10 +70,9 @@
 
         <div class="header__body">
             <div class="header__body__wrapper">
-                <h1 class="header__body__title">
-                    Awaken Your <br />
-                    <span>Inner Chef</span>
-                </h1>
+
+                {% component 'contenteditor' file="header_body/header_body.htm" fixture="h1" class="header__body__title"
+                %}
                 <div class="header__body__footer">
                     <a href="" class="header__body__footer__more custom__button"
                         >Learn more</a

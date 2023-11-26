@@ -1,6 +1,18 @@
+[builderList]
+modelClass = "Murad\Settings\Models\Settings"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = 1
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
 <footer class="footer">
             <div class="container">
-                <div class="footer__logo"><a href="./index.html">LOGO</a></div>
+                {% for record in builderList.records %}
+                    <div class="footer__logo"><a href="./index.html">{{ record.logo }}</a></div>
+                {% endfor %}
                 <div class="footer__wrapper">
                     <div class="footer__socials">
                         <div class="footer__social">
@@ -29,7 +41,10 @@
                 </div>
             </div>
             <hr />
-            <div class="footer__copirate">
-                ©2022 All Right Reserved. Developed by Webcoder
+            {% for record in builderList.records %}
+              <div class="footer__copirate">
+                {{ record.copywrite }}
             </div>
+            {% endfor %}
+
         </footer>

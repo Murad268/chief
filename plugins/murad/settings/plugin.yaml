@@ -4,6 +4,7 @@ plugin:
     author: Murad
     icon: oc-icon-coffee
     homepage: ''
+    multisite: true
 navigation:
     main-menu-item:
         label: Settings

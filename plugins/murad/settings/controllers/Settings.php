@@ -1,4 +1,6 @@
-<?php namespace Murad\Settings\Controllers;
+<?php
+
+namespace Murad\Settings\Controllers;
 
 use Backend;
 use BackendMenu;
@@ -17,7 +19,7 @@ class Settings extends Controller
     public function __construct()
     {
         parent::__construct();
+
         BackendMenu::setContext('Murad.Settings', 'main-menu-item');
     }
-
 }

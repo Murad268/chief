@@ -9,7 +9,11 @@
         "october/rain": "^3.5",
         "laravel/framework": "^9.0",
         "october/all": "^3.5",
-        "rainlab/builder-plugin": "^2.0"
+        "rainlab/builder-plugin": "^2.0",
+        "rainlab/translate-plugin": "^2.2",
+        "anandpatel/seoextension-plugin": "^1.0",
+        "samuell/contenteditor-plugin": "^1.3",
+        "rainlab/blog-plugin": "^1.7"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"

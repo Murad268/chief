@@ -20,7 +20,7 @@ class BuilderTableCreateMuradSettings extends Migration
             $table->timestamp('updated_at')->nullable();
         });
     }
-    
+
     public function down()
     {
         Schema::dropIfExists('murad_settings_');
