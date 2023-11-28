@@ -1,0 +1,9 @@
+fields:
+    text:
+        label: 'translate text'
+        span: auto
+        type: text
+    key:
+        label: 'enter your translate key'
+        span: auto
+        type: text

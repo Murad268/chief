@@ -1,0 +1,10 @@
+name: Translate
+form: $/murad/translate/models/about/fields.yaml
+modelClass: Murad\Translate\Models\About
+defaultRedirect: murad/translate/translate
+create:
+    redirect: 'murad/translate/translate/update/:id'
+    redirectClose: murad/translate/translate
+update:
+    redirect: murad/translate/translate
+    redirectClose: murad/translate/translate

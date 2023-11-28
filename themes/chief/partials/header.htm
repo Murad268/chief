@@ -7,17 +7,25 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
 [sitePicker]
 
+[builderList builderList2]
+modelClass = "Murad\Translate\Models\About"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = 10
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
-
 <header class="header">
 
     <div class="menu">
         <i class="fa fa-window-close" aria-hidden="true"></i>
         <ul>
-
-            <li><a href="./aboutUs.html">About us</a></li>
+            <li><a href="./aboutUs.html"></a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./products.html">Products</a></li>
             <li><a href="./ourteams.html">Our team</a></li>
@@ -67,11 +75,11 @@ pageNumber = "{{ :page }}"
         <nav class="navbar">
             <div class="navbar__wrapper">
                 <ul>
-                    <li><a href="./aboutUs.html">About us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./products.html">Products</a></li>
-                    <li><a href="./ourteams.html">Our team</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="">{{ 'nav.about'|_ }}</a></li>
+                    <li><a href="">{{ 'nav.services'|_ }}</a></li>
+                    <li><a href="">{{ 'nav.products'|_ }}</a></li>
+                    <li><a href="">{{ 'nav.contact'|_ }}</a></li>
+                    <li><a href="">{{ 'nav.teams'|_ }}</a></li>
                 </ul>
             </div>
         </nav>

@@ -1,0 +1,11 @@
+plugin:
+    name: 'murad.translate::lang.plugin.name'
+    description: 'murad.translate::lang.plugin.description'
+    author: Murad
+    icon: oc-icon-cc-stripe
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Translate
+        url: murad/translate/translate
+        icon: icon-life-ring

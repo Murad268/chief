@@ -1,0 +1,12 @@
+list: $/murad/translate/models/about/columns.yaml
+modelClass: Murad\Translate\Models\About
+title: Translate
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'murad/translate/translate/update/:id'
